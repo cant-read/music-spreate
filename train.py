@@ -131,8 +131,9 @@ def main(args):
 def parse_arguments(argv):
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--dataset_train_dir', type=str, help='数据集训练数据路径', default='./dataset/MIR-1K/Wavfile')
-    parser.add_argument('--dataset_validate_dir', type=str, help='数据集验证数据路径', default='./dataset/MIR-1K/UndividedWavfile')
+
+    parser.add_argument('--dataset_train_dir',type=str,help='xunal',default='./dataset/W')
+    parser.add_argument('--dataset_validate_dir',type=str,help='yanzheng',default='./dataset/Undivided')
     parser.add_argument('--model_dir', type=str, help='模型保存的文件夹', default='model')
     parser.add_argument('--model_filename', type=str, help='模型保存的文件名', default='svmrnn.ckpt')
     parser.add_argument('--dataset_sr', type=int, help='数据集音频文件的采样率', default=16000)
@@ -146,3 +147,8 @@ def parse_arguments(argv):
 
 if __name__ == '__main__':
     main(parse_arguments(sys.argv[1:]))
+
+
+
+        #parser.add_argument('--dataset_train_dir', type=str, help='数据集训练数据路径', default='/content/drive/My Drive/Colab Notebooks/dataset/Wavfile')
+    #parser.add_argument('--dataset_validate_dir', type=str, help='数据集验证数据路径', default='/content/drive/My Drive/Colab Notebooks/dataset/UndividedWavfile')
